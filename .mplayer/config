@@ -1,0 +1,15 @@
+# Write your default config options here!
+
+# video out
+# vo=xv
+vo=vdpau,
+
+#vc=ffh264vdpau,ffmpeg12vdpau,ffodivxvdpau,ffwmv3vdpau,ffvc1vdpau,
+
+# mplayer use usb audio device for audio
+#ao=jack
+#ao=alsa:device=plughw=0
+ao=alsa:device=plughw=1
+prefer-ipv4 = yes
+nolirc=yes
+really-quiet="1"

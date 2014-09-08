@@ -1,0 +1,7 @@
+[user]
+name = Daniel J Wilcox
+email = danieljwilcox@gmail.com
+[core]
+	editor = gvim -v
+[color]
+ui = true

@@ -1,0 +1,2 @@
+REGEXP (((https?|ftp|gopher)://|(mailto|file|news):)[^’ <>"]+|(www|web|w3).[-a-z0-9.]+)[^’ .,;<>":]
+COMMAND chromium-browser --no-referrers %s
