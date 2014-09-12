@@ -54,9 +54,6 @@ alias mkdir='mkdir -p'
 # btsync alias
 alias btsync='btsync --config ~/.btsync/btsync.conf'
 
-# convert magnet 
-alias mag2torrent='aria2c --bt-metadata-only=true --bt-save-metadata=true --listen-port=6881'
-
 # git aliases
 #============
 
@@ -104,6 +101,15 @@ alias gp='git pull'
 
 # functions
 #==========
+
+
+# convert magnet link to torrent
+#===============================
+
+# mag2torrent
+function mag2torrent {
+aria2c --bt-metadata-only=true --bt-save-metadata=true --listen-port=6881 "$1"
+}
 
 
 # youtube-dl vlc function
