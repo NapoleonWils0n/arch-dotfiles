@@ -10,6 +10,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# set PATH so it includes ~/.local/bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # git prompt
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
 	. /usr/share/git/completion/git-prompt.sh
@@ -133,7 +138,6 @@ xbmc-send --host=192.168.1.4 --port=9777 --action="PlayMedia("$1")"
 function youtube-xbmc {
 xbmc-send --host=192.168.1.4 --port=9777 --action="PlayMedia($(youtube-dl -g "$1"))"
 }
-
 
 # sopcast functions
 #==================
