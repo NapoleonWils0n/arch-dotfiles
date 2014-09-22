@@ -101,7 +101,8 @@ alias gl='git log --oneline --all --graph --decorate'
 # git pull
 alias gp='git pull'
 
-
+# ecryptfs add passphrase to keyring
+alias unlock='ecryptfs-insert-wrapped-passphrase-into-keyring /home/djwilcox/.ecryptfs/dropbox-wrapped-passphrase'
 
 
 # functions
