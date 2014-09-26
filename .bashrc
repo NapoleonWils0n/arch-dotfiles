@@ -15,6 +15,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# set PATH for android
+if [ -d "/opt/android-sdk/platform-tools" ] ; then
+    PATH="/opt/android-sdk/platform-tools:$PATH"
+fi
+
 # git prompt
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
 	. /usr/share/git/completion/git-prompt.sh
