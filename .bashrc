@@ -131,6 +131,10 @@ function youtube-vlc {
 vlc $(youtube-dl -g "$1") &>/dev/null
 }
 
+# mplayer youtube-dl
+function youtube-mplayer {
+curl --ciphers RC4-SHA $(youtube-dl -g "$1") | mplayer -cache 8192 -
+}
 
 # xbmc functions
 #===============

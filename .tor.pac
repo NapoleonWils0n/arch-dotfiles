@@ -31,7 +31,6 @@ function FindProxyForURL(url, host) {
 	"projectfree.tv",
 	"rapidlibrary.com",
         "rarbg.com",
-	"thepiratebay.se",
 	"torrentcrazy.com",
         "torrentfreak.com",
 	"torrent-finder.info",
