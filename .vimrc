@@ -60,4 +60,5 @@ let NERDTreeDirArrows=0
 "map code completion to , + tab
 imap ,tab <C -x><C -o>
 
-
+" markdown md file extension
+autocmd BufRead,BufNew *.md set filetype=markdown

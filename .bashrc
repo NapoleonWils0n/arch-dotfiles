@@ -46,7 +46,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-
 # bash aliases
 #=============
 
