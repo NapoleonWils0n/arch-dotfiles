@@ -63,6 +63,9 @@ alias mkdir='mkdir -p'
 # btsync alias
 alias btsync='btsync --config ~/.btsync/btsync.conf'
 
+# acestream alias
+alias acestreamengine='acestreamengine --client-console --port 6881'
+
 # git aliases
 #============
 
