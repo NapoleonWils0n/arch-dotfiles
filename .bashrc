@@ -66,6 +66,9 @@ alias btsync='btsync --config ~/.btsync/btsync.conf'
 # acestream alias
 alias acestreamengine='acestreamengine --client-console --port 6881'
 
+alias squeezelite-speaker 'squeezelite -o iec958:CARD=M192kHz,DEV=0'
+
+
 # git aliases
 #============
 

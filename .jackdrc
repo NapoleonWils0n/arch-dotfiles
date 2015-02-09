@@ -1,1 +1,1 @@
-/usr/bin/jackd -dalsa -dhw:M192kHz -r48000 -p4096 -n3 -P
+/usr/bin/jackd -dalsa -dhw:PCH,0 -r44100 -p256 -n2
