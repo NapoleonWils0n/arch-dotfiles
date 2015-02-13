@@ -43,9 +43,6 @@ export GNUPGHOME="~/.gnupg-personal"
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# Tell grep to highlight matches
-export GREP_OPTIONS='--color=auto'
-
 # bash aliases
 #=============
 
