@@ -5,3 +5,5 @@ email = danieljwilcox@gmail.com
 	editor = gvim -v
 [color]
 ui = true
+[merge]
+	tool = meld
