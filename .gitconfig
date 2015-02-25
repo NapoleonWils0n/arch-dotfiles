@@ -7,3 +7,5 @@ email = danieljwilcox@gmail.com
 ui = true
 [merge]
 	tool = meld
+[diff]
+	external = /home/djwilcox/bin/git-diff.sh
