@@ -63,6 +63,16 @@ alias btsync='btsync --config ~/.btsync/btsync.conf'
 # acestream alias
 alias acestreamengine='acestreamengine --client-console --port 6881'
 
+
+# keyboard backlight on
+alias backlight='sudo echo 255 > /sys/class/leds/smc::kbd_backlight/brightness'
+
+
+# keyboard backlight off
+alias backlight='sudo echo 0 > /sys/class/leds/smc::kbd_backlight/brightness'
+
+
+
 # git aliases
 #============
 
