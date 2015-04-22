@@ -145,7 +145,7 @@ function youtube-mplayer {
 curl --ciphers RC4-SHA $(youtube-dl -g "$1") | mplayer -cache 8192 -
 }
 
-# xbmc functions
+# kodi functions
 #===============
 
 # xbmc-send play video url
@@ -154,7 +154,7 @@ xbmc-send --host=192.168.1.4 --port=9777 --action="PlayMedia("$1")"
 }
 
 # xbmc-send play youtube videos with youtube-dl
-function youtube-xbmc {
+function youtube-kodi {
 xbmc-send --host=192.168.1.4 --port=9777 --action="PlayMedia($(youtube-dl -g "$1"))"
 }
 
