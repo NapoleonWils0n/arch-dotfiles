@@ -8,6 +8,9 @@ set shiftwidth=3
 set smartindent
 set autoindent
 
+" set clipboard
+set clipboard=unnamedplus
+
 " disable code folding
 set nofoldenable
 
