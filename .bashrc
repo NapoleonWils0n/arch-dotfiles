@@ -25,6 +25,12 @@ if [ -f /usr/share/git/completion/git-prompt.sh ]; then
 	. /usr/share/git/completion/git-prompt.sh
 fi
 
+# pandoc bash completion
+
+if [ -f /home/djwilcox/.pandoc-completion.bash ]; then
+	. /home/djwilcox/.pandoc-completion.bash
+fi
+
 # Shell prompt
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true

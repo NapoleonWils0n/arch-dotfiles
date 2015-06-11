@@ -11,6 +11,9 @@ set autoindent
 " set clipboard
 set clipboard=unnamedplus
 
+" gundo undo tree
+nnoremap <F5> :GundoToggle<CR>
+
 " show invisible characters
 nmap <leader>l :set list!<CR>
 
