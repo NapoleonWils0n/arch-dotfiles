@@ -77,4 +77,4 @@ let NERDTreeDirArrows=0
 imap ,tab <C -x><C -o>
 
 " markdown md file extension
-autocmd BufRead,BufNew *.md set filetype=markdown
+"autocmd BufRead,BufNew *.md set filetype=markdown
