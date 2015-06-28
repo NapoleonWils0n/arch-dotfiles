@@ -5,7 +5,8 @@ set realname = "Daniel J Wilcox"
 color normal default default
 set imap_user = "danieljwilcox@gmail.com"
 set smtp_url = "smtp://danieljwilcox@smtp.gmail.com:587/"
-source "gpg -d ~/.mutt/mutt-passwords.gpg |"
+#source "gpg -d ~/.mutt/mutt-passwords.gpg |"
+source "~/.mutt/mutt-gmail.txt"
 
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+Inbox"
