@@ -33,8 +33,12 @@ set beep_new
 # Ctrl-R to mark all as read
 macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
 
-set query_command="goobook query '%s'"
-macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+#set query_command="goobook query '%s'"
+#macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+
+set query_command = "abook --mutt-query '%s'"
+macro generic,index,pager \ca "<shell-escape>abook<return>" "launch abook"
+macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender address to abook"
 bind editor <Tab> complete-query
 
 bind compose p pgp-menu
