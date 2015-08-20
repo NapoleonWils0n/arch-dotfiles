@@ -1,0 +1,3 @@
+auto-reload yes
+browser "/usr/bin/chromium %u"
+macro y set browser "/usr/bin/mpv %u"; open-in-browser ; set browser "/usr/bin/chromium %u"
