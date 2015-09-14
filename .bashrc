@@ -10,11 +10,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# set PATH so it includes the kodi playercorefactory scripts
-if [ -d "$HOME/git/kodi-playercorefactory/bash-scripts" ] ; then
-    PATH="$HOME/git/kodi-playercorefactory/bash-scripts:$PATH"
-fi
-
 # set PATH so it includes ~/.local/bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
