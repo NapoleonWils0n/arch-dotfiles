@@ -11,6 +11,9 @@ set autoindent
 " aspell - press T in normal mode to spell check
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
 
+" ffplay
+nmap ,m :!rip-play <C-r>=getline(".")[col(".")-1:]<CR><CR>
+
 " set clipboard
 set clipboard=unnamedplus
 
