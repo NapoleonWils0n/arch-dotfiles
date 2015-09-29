@@ -8,9 +8,6 @@ set shiftwidth=3
 set smartindent
 set autoindent
 
-" ffplay
-"nmap ,m :!rip-play <C-r>=getline(".")[col(".")-1:]<CR><CR>
-
 " aspell - press T in normal mode to spell check
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
 
