@@ -69,6 +69,8 @@ alias vim='gvim -v'
 # wget - enable continue and set the user agent
 alias wget='wget --user-agent="Mozilla" -c'
 
+alias curl='curl -A "Mozilla"'
+
 # mkdir check if dir exists
 alias mkdir='mkdir -p'
 
