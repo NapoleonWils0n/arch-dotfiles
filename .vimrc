@@ -12,7 +12,9 @@ set autoindent
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
 
 " ffplay
-nmap ,m /http:<cr>Y:!ffplay -fs <c-r>"<cr>
+nmap ,m /^\(\(.*#.*\)\@!.\)*$\&http:<cr>Y:!ffplay -fs <c-r>"<cr>
+
+
 
 " set clipboard
 set clipboard=unnamedplus
