@@ -12,7 +12,7 @@ set autoindent
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
 
 " ffplay
-nmap ,m :# if getline('.') =~ '#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:!ffplay -fs <c-r>"<cr>
+nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:!ffplay -fs <c-r>"<cr>
 
 " set clipboard
 set clipboard=unnamedplus
