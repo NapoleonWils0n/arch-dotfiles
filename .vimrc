@@ -12,11 +12,11 @@ set hlsearch
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
+" ffplay
+"nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:!ffplay -fs <c-r>"<cr>
+
 " aspell - press T in normal mode to spell check
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
-
-" ffplay
-nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:!ffplay -fs <c-r>"<cr>
 
 " set clipboard
 set clipboard=unnamedplus
