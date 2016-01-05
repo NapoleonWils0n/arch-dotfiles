@@ -1,3 +1,0 @@
-auto-reload yes
-macro m set browser "/usr/bin/vlc %u &>/dev/null"; open-in-browser ; set browser "/usr/bin/chromium %u"
-browser "/usr/bin/chromium %u"
