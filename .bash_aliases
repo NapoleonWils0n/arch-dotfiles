@@ -18,6 +18,12 @@ alias backlight='sudo echo 255 > /sys/class/leds/smc::kbd_backlight/brightness'
 # keyboard backlight off
 alias backlight='sudo echo 0 > /sys/class/leds/smc::kbd_backlight/brightness'
 
+# hdmi display on
+alias hdmi-on='xandr --output eDP1 --auto --primary --output HDMI1 --auto --right-of eDP1'
+
+# hdmi display off
+alias hdmi-off='xrandr --output eDP1 --auto --primary --output HDMI1 --off'
+
 
 # git aliases
 #============
