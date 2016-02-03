@@ -5,7 +5,7 @@
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+# [[ $- != *i* ]] && return
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
