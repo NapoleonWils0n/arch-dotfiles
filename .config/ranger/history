@@ -1,5 +1,4 @@
 rename image.png
-search ssh
 gs
 git status
 ?
@@ -10,3 +9,7 @@ wq
 
 search 
 search i3
+search pando
+search pandoc
+search ebook
+search ssh
