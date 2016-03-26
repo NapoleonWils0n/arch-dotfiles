@@ -1,0 +1,11 @@
+# view html attachments with lynx
+text/html; lynx %s
+
+# images open with ristretto default image viewer
+image/jpeg; sxiv %s
+image/jpeg; sxiv %s
+image/png; sxiv %s
+image/gif; sxiv %s
+
+# pdfs open with evince
+application/pdf; zathura %s
