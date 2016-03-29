@@ -8,15 +8,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
-
-
-
-
-
-
     xrdb -merge $sysresources
-
 fi
 
 if [ -f $sysmodmap ]; then
@@ -24,15 +16,7 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
-
-
-
-
-
-
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -49,23 +33,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # use xmodmap to swap ctrl and cmd
-if [ -s ~/.Xmodmap ]; then
-    xmodmap ~/.Xmodmap
-fi
+#if [ -s ~/.Xmodmap ]; then
+#   xmodmap ~/.Xmodmap
+#fi
 
-#twm &
-#xclock -geometry 50x50-1+1 &
-#xterm -geometry 80x50+494+51 &
-#xterm -geometry 80x20+494-0 &
-#exec xterm -geometry 80x66+0+0 -name login
-#exec startxfce4
+# start i3
 exec i3
-
-# start a D-bus session
-#source /etc/X11/xinit/xinitrc.d/30-bus
-# start Gnome keyring
-#eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-#export SSH_AUTH_SOCK
-#export GPG_AGENT_INFO
-#export GNOME_KEYRING_CONTROL
-#export GNOME_KEYRING_PID 
