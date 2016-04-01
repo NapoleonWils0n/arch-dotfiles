@@ -32,10 +32,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# use xmodmap to swap ctrl and cmd
-#if [ -s ~/.Xmodmap ]; then
-#   xmodmap ~/.Xmodmap
-#fi
-
 # start i3
 exec i3
