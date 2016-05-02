@@ -13,7 +13,6 @@ general {
 
 order += "volume master"
 order += "disk /"
-order += "run_watch DHCP"
 order += "path_exists VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
@@ -34,10 +33,6 @@ ethernet _first_ {
 
 battery 0 {
         format = "%status %percentage %remaining"
-}
-
-run_watch DHCP {
-        pidfile = "/var/run/dhclient*.pid"
 }
 
 path_exists VPN {
