@@ -67,3 +67,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export SDL_AUDIODRIVER="alsa"
 export AUDIODEV="plughw:1,0"
 #export AUDIODEV="plughw:0,0"
+
+# editor
+export EDITOR="/usr/bin/gvim -v"
