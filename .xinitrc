@@ -39,3 +39,4 @@ xkbcomp -I$HOME/.xkb $HOME/.xkb/keymap/keymap.xkb $DISPLAY
 exec i3
 
 # start remind
+remind -z -k'notify-send -i kodi "Reminder" %s &' ~/documents/reminders &
