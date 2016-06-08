@@ -27,6 +27,8 @@ set template1="REM %wdayname% MSG "
 set template2="REM %mday% AT %hour%:%min% DURATION 1:00 MSG "
 set template3="REM %mday% MSG "
 
+# video recording
+set template4="REM %monname% %mday% %year% AT %hour%:%min% DURATION 1:00 RUN rip-record ~/Desktop/channelx.txt -t 01:00:00 &>/dev/null &"
 
 # algorithm to use for determining busy level
 # "1" -> count the number of reminders in each day
@@ -127,6 +129,7 @@ bind "w"                 new_template0
 bind "W"                 new_template1
 bind "m"                 new_template2
 bind "M"                 new_template3
+bind "v"                 new_template4
 bind "n"                 search_next
 bind "/"                 begin_search
 bind "<tab>"             next_reminder
