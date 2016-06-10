@@ -16,19 +16,19 @@ set edit_any_command="gvim -v \"%file%\""
 # %monname% -> month name, %mon% -> month number, %mday% -> day of the month, 
 # %year% -> year, %hour% -> hour, %min% -> minute, %wdayname% -> weekday name
 # %wday% -> weekday number
-set timed_template="rem %monname% %mday% %year% at %hour%:%min% duration 1:00 MSG %\" %\" %1"
-set untimed_template="rem %monname% %mday% %year% MSG %\" %\" %b"
+set timed_template="REM %monname% %mday% %year% AT %hour%:%min% DURATION 1:00 MSG %\" %\" %1"
+set untimed_template="REM %monname% %mday% %year% MSG %\" %\" %b"
 
 # weekly recurrence
-set template0="rem %wdayname% at %hour%:%min% duration 1:00 msg "
-set template1="rem %wdayname% msg "
+set template0="REM %wdayname% AT %hour%:%min% DURATION 1:00 MSG "
+set template1="REM %wdayname% MSG "
 
 # monthly recurrence
-set template2="rem %mday% at %hour%:%min% duration 1:00 msg "
-set template3="rem %mday% msg "
+set template2="REM %mday% AT %hour%:%min% DURATION 1:00 MSG "
+set template3="REM %mday% MSG "
 
 # video recording
-set template4="rem %monname% %mday% %year% at %hour%:%min% duration 1:00 run rip-record ~/Desktop/channelx.txt -t 01:00:00 &>/dev/null &"
+set template4="REM %monname% %mday% %year% AT %hour%:%min% DURATION 1:00 RUN rip-record ~/Desktop/channelx.txt -t 01:00:00 &>/dev/null &"
 
 # algorithm to use for determining busy level
 # "1" -> count the number of reminders in each day
