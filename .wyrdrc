@@ -16,8 +16,8 @@ set edit_any_command="gvim -v \"%file%\""
 # %monname% -> month name, %mon% -> month number, %mday% -> day of the month, 
 # %year% -> year, %hour% -> hour, %min% -> minute, %wdayname% -> weekday name
 # %wday% -> weekday number
-set timed_template="rem %monname% %mday% %year% at %hour%:%min% duration 1:00 msg %\" %\" %1"
-set untimed_template="rem %monname% %mday% %year% msg %\" %\" %b"
+set timed_template="rem %monname% %mday% %year% at %hour%:%min% duration 1:00 msg %\"message%\" %1"
+set untimed_template="rem %monname% %mday% %year% msg "
 
 # weekly recurrence
 set template0="rem %wdayname% at %hour%:%min% duration 1:00 msg "
