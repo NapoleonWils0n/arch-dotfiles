@@ -24,6 +24,8 @@ alias hdmi-on='xrandr --output eDP1 --auto --primary --output HDMI1 --auto --rig
 # hdmi display off
 alias hdmi-off='xrandr --output eDP1 --auto --primary --output HDMI1 --off'
 
+# remind calendar
+alias remind-start='remind -z -k'notify-send -i kodi "Reminder" %s &' ~/documents/reminders &'
 
 # git aliases
 #============
