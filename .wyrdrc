@@ -150,10 +150,10 @@ bind "<esc>"             entry_cancel
 color help               black green
 color timed_default      default default
 color timed_current      default default
-color timed_reminder1    default default
-color timed_reminder2    default default
-color timed_reminder3    default default
-color timed_reminder4    default default
+color timed_reminder1    black green
+color timed_reminder2    black green
+color timed_reminder3    black green
+color timed_reminder4    black green
 color untimed_reminder   default default
 color timed_date         default default
 color selection_info     black green
