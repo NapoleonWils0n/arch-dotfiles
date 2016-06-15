@@ -3,7 +3,7 @@
 # command for the Remind executable
 set remind_command="remind"
 # the default reminder file or directory to display
-set reminders_file="$HOME/documents/reminders"
+set reminders_file="$HOME/.reminders"
 # command for editing an old appointment, given a line number %line% and filename %file%
 set edit_old_command="gvim -v +%line% \"%file%\""
 # command for editing a new appointment, given a filename %file%
