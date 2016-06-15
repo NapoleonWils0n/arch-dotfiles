@@ -1,7 +1,7 @@
 # bash aliases
 #=============
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -h'
 alias vim='gvim -v'
 
 # wget - enable continue and set the user agent
