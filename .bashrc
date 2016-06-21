@@ -61,7 +61,7 @@ export GNUPGHOME="~/.gnupg"
 
 # Tell ls to be colourful
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
+#export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # export alsa settings for ffplay
 export SDL_AUDIODRIVER="alsa"
@@ -70,3 +70,11 @@ export AUDIODEV="plughw:1,0"
 
 # editor
 export EDITOR="/usr/bin/gvim -v"
+
+# dir colors
+export TERM="xterm-color"
+
+if [ -f $HOME/.dir_colors ]; then
+	eval `dircolors -b $HOME/.dir_colors`
+fi
+
