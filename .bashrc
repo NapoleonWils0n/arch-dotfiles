@@ -72,7 +72,7 @@ export AUDIODEV="plughw:1,0"
 export EDITOR="/usr/bin/gvim -v"
 
 # dir colors
-export TERM="xterm-color"
+export TERM="xterm-color-256color"
 
 if [ -f $HOME/.dir_colors ]; then
 	eval `dircolors -b $HOME/.dir_colors`
