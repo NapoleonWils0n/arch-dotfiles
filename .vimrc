@@ -9,6 +9,12 @@ set smartindent
 set autoindent
 set hlsearch
 
+" markdown folding
+set nocompatible
+if has("autocmd")
+  filetype plugin indent on
+endif
+
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
