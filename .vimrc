@@ -12,8 +12,8 @@ set hlsearch
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-" ffplay
-nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:exec '!rip-play ' .shellescape(getreg('"'), 1)<cr>
+" mpv
+nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:exec '!rip-play-mpv ' .shellescape(getreg('"'), 1)<cr>
 
 " aspell - press T in normal mode to spell check
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
@@ -89,3 +89,8 @@ imap ,tab <C -x><C -o>
 
 " markdown md file extension
 "autocmd BufRead,BufNew *.md set filetype=markdown
+
+"Folding colours
+set foldmethod=marker
+hi Folded cterm=bold ctermfg=DarkBlue ctermbg=none
+hi FoldColumn cterm=bold ctermfg=DarkBlue ctermbg=none
