@@ -1,3 +1,4 @@
+; melpa rackages
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
@@ -27,3 +28,9 @@
 ; case insensitive search
 (setq read-file-name-completion-ignore-case t)
 (setq pcomplete-ignore-case t)
+; powerline-evil
+(require 'powerline)
+(powerline-evil-vim-color-theme)
+(display-time-mode t)
+; magit 
+(global-set-key (kbd "C-x g") 'magit-status)
