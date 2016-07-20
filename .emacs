@@ -7,7 +7,7 @@
 ; hide scrollbar
 (scroll-bar-mode -1)
 ; markdown preview using pandoc
-(setq markdown-command "pandoc -f markdown -t html -s --mathjax --highlight-style=pygments")
+(setq markdown-command "pandoc -f markdown -t html -s -S --mathjax --highlight-style=pygments")
 ; hide start up screen
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t) 

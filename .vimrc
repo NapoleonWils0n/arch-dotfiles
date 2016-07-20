@@ -9,11 +9,14 @@ set smartindent
 set autoindent
 set hlsearch
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " mpv
-nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:exec '!rip-play-mpv ' .shellescape(getreg('"'), 1)<cr>
+"nmap ,m :if getline('.') =~ '^\s*#' \| call search('\n[^#]*\zshttp:') \| endif<cr>Y:exec '!rip-play-mpv ' .shellescape(getreg('"'), 1)<cr>
 
 " aspell - press T in normal mode to spell check
 map T :w!<CR>:!aspell --lang=en_GB --dont-backup -c %<CR>:e! %<CR>
@@ -73,7 +76,7 @@ nnoremap <leader>ft Vatzf
 set wildmode=list:longest
 
 "toggle nerdtree and press enter with <CR>
-nmap ,, :NERDTreeToggle<CR>
+nmap ,m :NERDTreeToggle<CR>
 
 "nerdtree show hidden files
 let NERDTreeShowHidden=1
@@ -101,3 +104,7 @@ highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
 
 " vim pandoc syntax
 hi! link Conceal Special
+
+" vim markdown preview
+"map <Leader>x :w<cr>:!pandoc % \| lynx -stdin<cr>:redraw!<cr>
+map <Leader> :w<cr>:!pandoc -f markdown -t html -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
