@@ -105,6 +105,5 @@ highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
 " vim pandoc syntax
 hi! link Conceal Special
 
-" vim markdown preview
-"map <Leader>x :w<cr>:!pandoc % \| lynx -stdin<cr>:redraw!<cr>
-map <Leader>, :w<cr>:!pandoc -f markdown -t html -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
+" vim preview with w3m
+map <Leader>, :w<cr>:!pandoc -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
