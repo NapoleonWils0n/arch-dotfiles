@@ -107,4 +107,4 @@ hi! link Conceal Special
 
 " vim markdown preview
 "map <Leader>x :w<cr>:!pandoc % \| lynx -stdin<cr>:redraw!<cr>
-map <Leader> :w<cr>:!pandoc -f markdown -t html -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
+map <Leader>, :w<cr>:!pandoc -f markdown -t html -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
