@@ -30,7 +30,7 @@
 (setq pcomplete-ignore-case t)
 ; powerline-evil
 (require 'powerline)
-(powerline-evil-vim-color-theme)
+(powerline-default-theme)
 (display-time-mode t)
 ; magit 
 (global-set-key (kbd "C-x g") 'magit-status)
