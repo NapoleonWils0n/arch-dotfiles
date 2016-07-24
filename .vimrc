@@ -76,7 +76,7 @@ nnoremap <leader>ft Vatzf
 set wildmode=list:longest
 
 "toggle nerdtree and press enter with <CR>
-nmap ,m :NERDTreeToggle<CR>
+nmap ,x :NERDTreeToggle<CR>
 
 "nerdtree show hidden files
 let NERDTreeShowHidden=1
@@ -110,4 +110,4 @@ hi! link Conceal Special
 map <Leader>, :w<cr>:!pandoc -f markdown -t html -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
 
 " vim preview with chromium
-map <Leader>. :w<cr>:!pandoc -f markdown -t html -s -S % \| chromium --log-level=3 "data:text/html;charset=utf-8;base64,`base64`"<cr>:redraw!<cr>
+map <Leader>m :w<cr>:!pandoc -f markdown -t html -s -S % \| chromium --log-level=3 "data:text/html;charset=utf-8;base64,`base64`"<cr>:redraw!<cr>
