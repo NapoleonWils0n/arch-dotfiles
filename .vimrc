@@ -108,3 +108,6 @@ hi! link Conceal Special
 " vim preview with w3m
 "map <Leader>, :w<cr>:!pandoc -f markdown -t html -s -S % \| lynx -stdin<cr>:redraw!<cr>
 map <Leader>, :w<cr>:!pandoc -f markdown -t html -s -S % \| w3m -T 'text/html'<cr>:redraw!<cr>
+
+" vim preview with chromium
+map <Leader>. :w<cr>:!pandoc -f markdown -t html -s -S % \| chromium --log-level=3 "data:text/html;charset=utf-8;base64,`base64`"<cr>:redraw!<cr>
