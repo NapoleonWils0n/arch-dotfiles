@@ -93,8 +93,9 @@ imap ,tab <C -x><C -o>
 " markdown md file extension
 "autocmd BufRead,BufNew *.md set filetype=markdown
 
-"Folding colours
+"Folding colours and remove dashes
 set foldmethod=marker
+set fillchars="fold: " 
 hi Folded cterm=bold ctermfg=DarkBlue ctermbg=none
 hi FoldColumn cterm=bold ctermfg=DarkBlue ctermbg=none
 
