@@ -8,6 +8,10 @@
 (scroll-bar-mode -1)
 ; markdown preview using pandoc
 (setq markdown-command "pandoc -f markdown -t html -s -S --mathjax --highlight-style=pygments")
+; place headers on the left
+(setq markdown-asymmetric-header t)
+; gfm mode
+(setq auto-mode-alist (cons '("\\.mdt$" . gfm-mode) auto-mode-alist))
 ; hide start up screen
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t) 
