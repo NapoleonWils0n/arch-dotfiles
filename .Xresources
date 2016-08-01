@@ -1,5 +1,5 @@
 ! meta sends escape
-urxvt*metaSendsEscape:    true
+!urxvt*metaSendsEscape:    true
 
 ! Compile xft: Attempt to find a visual with the given bit depth; option -depth.
 ! URxvt*depth: bitdepth
