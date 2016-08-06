@@ -94,6 +94,7 @@
 ; magit 
 (global-set-key (kbd "C-x g") 'magit-status)
 
+; org capture templates
 (setq org-capture-templates
     '(("t" "Todo" entry
       (file+headline "~/org/todo.org" "Tasks")
