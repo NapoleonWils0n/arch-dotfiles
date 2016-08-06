@@ -4,7 +4,8 @@
 (package-initialize)
 
 ;Tell emacs where is your personal elisp lib dir
-;(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(load "org-protocol-capture-html")
 
 ; hide start up screen
 (setq inhibit-startup-screen t)
@@ -45,6 +46,7 @@
 (require 'org)
 (require 'org-protocol)
 (require 'org-capture)
+(require 'org-protocol-capture-html)
 (setq org-agenda-files '("~/org/"))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
