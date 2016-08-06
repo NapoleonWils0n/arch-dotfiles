@@ -80,8 +80,11 @@
 
 ; todo keywords
 (setq org-todo-keywords
-      '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
+      '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" "DONE(d@)")))
 (setq org-log-done t)
+
+; org todo logbook
+(setq org-log-into-drawer t)
 
 ; powerline-evil
 (require 'powerline)
@@ -90,3 +93,15 @@
 
 ; magit 
 (global-set-key (kbd "C-x g") 'magit-status)
+
+(setq org-capture-templates
+    '(("t" "Todo" entry
+      (file+headline "~/org/todo.org" "Tasks")
+      (file "~/org/templates/tpl-todo.txt")
+      :empty-lines-before 1)
+      ("w" "Web site" entry
+      (file+olp "~/org/notes.org" "Notes")
+      (file "~/org/templates/tpl-notes.txt")
+      :empty-lines-before 1)))
+
+(custom-set-faces)
