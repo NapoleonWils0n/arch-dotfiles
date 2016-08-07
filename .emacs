@@ -66,14 +66,18 @@
   (if (equal "emacs-capture" (frame-parameter nil 'name))
       (delete-frame)))
 
-; Define entry for capturing Web content
+; org capture templates
 (setq org-capture-templates
- '(("t" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
-        "* TODO %?\n  %i\n  %a")
-   ("j" "Journal" entry (file+datetree "~/org/journal.org")
-        "* %?\nEntered on %U\n  %i\n  %a")
-   ("w" "Web site" entry (file+olp "~/org/notes.org" "Notes")
-   "* %c :website:\n%U %?%:initial")))
+    '(("t" "Todo" entry
+      (file+headline "~/org/todo.org" "Tasks")
+      (file "~/org/templates/tpl-todo.txt")
+      :empty-lines-before 1)
+      ("w" "Web site" entry (file+olp "~/org/web.org" "Web")
+      (file "~/org/templates/tpl-web.txt")
+      :empty-lines-before 1)))
+
+; custom faces
+(custom-set-faces)
 
 ;; Prepare stuff for org-export-backends
 (setq org-export-backends '(org latex icalendar html ascii))
@@ -94,16 +98,3 @@
 ; magit 
 (global-set-key (kbd "C-x g") 'magit-status)
 
-; org capture templates
-(setq org-capture-templates
-    '(("t" "Todo" entry
-      (file+headline "~/org/todo.org" "Tasks")
-      (file "~/org/templates/tpl-todo.txt")
-      :empty-lines-before 1)
-      ("w" "Web site" entry
-      (file+olp "~/org/web.org" "Web")
-      (file "~/org/templates/tpl-web.txt")
-      :empty-lines-before 1)))
-
-; custom faces
-(custom-set-faces)
