@@ -80,7 +80,7 @@
 
 ; todo keywords
 (setq org-todo-keywords
-      '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" "DONE(d@)")))
+      '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" " | " "DONE(d@)")))
 (setq org-log-done t)
 
 ; org todo logbook
@@ -101,8 +101,9 @@
       (file "~/org/templates/tpl-todo.txt")
       :empty-lines-before 1)
       ("w" "Web site" entry
-      (file+olp "~/org/notes.org" "Notes")
-      (file "~/org/templates/tpl-notes.txt")
+      (file+olp "~/org/web.org" "Web")
+      (file "~/org/templates/tpl-web.txt")
       :empty-lines-before 1)))
 
+; custom faces
 (custom-set-faces)
