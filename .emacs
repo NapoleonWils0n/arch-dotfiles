@@ -16,6 +16,9 @@
 ; hide scrollbar
 (scroll-bar-mode -1)
 
+; visual line mode
+(add-hook 'text-mode-hook 'visual-line-mode)
+
 ; backup directory
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 (setq delete-old-versions -1)
@@ -79,13 +82,16 @@
 ; custom faces
 (custom-set-faces)
 
-;; Prepare stuff for org-export-backends
+; Prepare stuff for org-export-backends
 (setq org-export-backends '(org latex icalendar html ascii))
 
 ; todo keywords
 (setq org-todo-keywords
       '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" " | " "DONE(d@)")))
 (setq org-log-done t)
+
+; Fast Todo Selection - Changing a task state is done with C-c C-t KEY
+(setq org-use-fast-todo-selection t)
 
 ; org todo logbook
 (setq org-log-into-drawer t)
