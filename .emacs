@@ -32,6 +32,7 @@
 ; case insensitive search
 (setq read-file-name-completion-ignore-case t)
 (setq pcomplete-ignore-case t)
+
 ; place headers on the left
 (setq markdown-asymmetric-header t)
 
@@ -79,6 +80,12 @@
       (file "~/org/templates/tpl-web.txt")
       :empty-lines-before 1)))
 
+; refile
+(setq org-refile-targets '((nil :maxlevel . 2)
+                                (org-agenda-files :maxlevel . 2)))
+(setq org-outline-path-complete-in-steps nil)         ; Refile in a single go
+(setq org-refile-use-outline-path t)                  ; Show full paths for refiling
+
 ; custom faces
 (custom-set-faces)
 
@@ -104,3 +111,6 @@
 ; magit 
 (global-set-key (kbd "C-x g") 'magit-status)
 
+; undo tree
+(require 'undo-tree)
+(global-undo-tree-mode 1)
