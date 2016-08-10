@@ -90,11 +90,11 @@
 (custom-set-faces)
 
 ; Prepare stuff for org-export-backends
-(setq org-export-backends '(org latex icalendar html ascii))
+(setq org-export-backends '(org md html latex icalendar odt ascii))
 
 ; todo keywords
 (setq org-todo-keywords
-      '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" " | " "DONE(d@)")))
+      '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" "|" "DONE(d@)")))
 (setq org-log-done t)
 
 ; Fast Todo Selection - Changing a task state is done with C-c C-t KEY
