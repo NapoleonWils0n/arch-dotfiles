@@ -111,8 +111,8 @@
 ; magit 
 (global-set-key (kbd "C-x g") 'magit-status)
 
-; git-auto-commit-mode
-(setq-default gac-automatically-push-p t)
+; git-auto-commit-mode auto push to head
+;(setq-default gac-automatically-push-p t)
 
 ; undo tree
 (require 'undo-tree)
