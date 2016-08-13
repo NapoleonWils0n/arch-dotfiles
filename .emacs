@@ -92,6 +92,15 @@
 ; Prepare stuff for org-export-backends
 (setq org-export-backends '(org md html latex icalendar odt ascii))
 
+; org hide markup
+(setq org-hide-emphasis-markers t)
+
+; org spacing
+(setq org-cycle-separator-lines 1)
+
+; org column spacing for tags
+(setq org-tags-column 0)
+
 ; todo keywords
 (setq org-todo-keywords
       '((sequence "TODO(t@/!)" "IN-PROGRESS(p/!)" "WAITING(w@/!)" "|" "DONE(d@)")))
