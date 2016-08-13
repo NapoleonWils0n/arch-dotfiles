@@ -96,7 +96,7 @@
 (setq org-hide-emphasis-markers t)
 
 ; org spacing
-(setq org-cycle-separator-lines 1)
+;(setq org-cycle-separator-lines 1)
 
 ; org column spacing for tags
 (setq org-tags-column 0)
