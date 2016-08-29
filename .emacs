@@ -112,6 +112,11 @@
 ; org todo logbook
 (setq org-log-into-drawer t)
 
+; org-babel graphviz
+(org-babel-do-load-languages
+'org-babel-load-languages
+'((dot . t))) ; this line activates dot
+
 ; powerline-evil
 (require 'powerline)
 (powerline-default-theme)
@@ -126,3 +131,7 @@
 ; undo tree
 (require 'undo-tree)
 (global-undo-tree-mode 1)
+
+; ox-pandoc export
+(setq org-pandoc-options-for-markdown '((atx-headers . t)))
+(setq org-pandoc-options-for-latex-pdf '((latex-engine . "xelatex")))
