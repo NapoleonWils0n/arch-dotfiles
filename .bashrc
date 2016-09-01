@@ -44,6 +44,8 @@ if [ -d "/opt/android-sdk/platform-tools" ] ; then
     PATH="/opt/android-sdk/platform-tools:$PATH"
 fi
 
+# ruby
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # Shell prompt
 GIT_PS1_SHOWDIRTYSTATE=true
