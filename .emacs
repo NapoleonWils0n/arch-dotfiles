@@ -2,6 +2,10 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
+(elpy-enable)
+;; fixing elpy keybinding
+(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
+(define-key global-map (kbd "C-c o") 'iedit-mode)
 
 ;Tell emacs where is your personal elisp lib dir
 (add-to-list 'load-path "~/.emacs.d/lisp/")
@@ -87,7 +91,12 @@
 (setq org-refile-use-outline-path t)                  ; Show full paths for refiling
 
 ; custom faces
-(custom-set-faces)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 ; Prepare stuff for org-export-backends
 (setq org-export-backends '(org md html latex icalendar odt ascii))
@@ -135,3 +144,11 @@
 ; ox-pandoc export
 (setq org-pandoc-options-for-markdown '((atx-headers . t)))
 (setq org-pandoc-options-for-latex-pdf '((latex-engine . "xelatex")))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (elpy powerline ox-pandoc markdown-mode magit git-auto-commit-mode evil-surround evil-leader emmet-mode))))
