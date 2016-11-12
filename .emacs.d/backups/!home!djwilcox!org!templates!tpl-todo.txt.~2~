@@ -1,7 +1,0 @@
-* TODO %^{Description}
-  %?
-  :clock-in t
-  :clock-resume t
-  :LOGBOOK:
-  - Added: %U
-  :END:
