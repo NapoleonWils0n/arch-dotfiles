@@ -1,0 +1,44 @@
+#+TITLE: todo
+#+AUTHOR: Daniel J Wilcox
+#+STARTUP: content
+
+* Tasks
+
+* Emacs
+** TODO [#A] org babel
+   :LOGBOOK:
+   - State "IN-PROGRESS" from "TODO"       [2016-08-29 Mon 02:06]
+   - State "TODO"       from              [2016-08-29 Mon 02:05] \\
+     set up org babel with graphviz to create diagrams
+   :END:
+- set up org babel with graphviz
+** TODO [#A] graphviz
+   :LOGBOOK:
+   - State "TODO"       from              [2016-08-29 Mon 02:06] \\
+     graphviz read the manual on how to create diagrams with dot
+   :END:
+- read graphviz manual
+* Arch linux to do list
+
+** TODO [#A] unbound dnscrypt find fix
+    :LOGBOOK:  
+    - State "TODO"       from ""           [2016-08-12 Fri 20:47] \\
+      unbound dnscrypt proxy not working find fix
+    :END:      
+   unbound do not query localhost not working with dnscrypt proxy
+
+* Mac osx to do list
+     
+** TODO [#B] mpd mpc ncmpc set up
+   + create dot files for mpd, mpc and ncmpc
+   + connect to nfs share on mac osx
+** TODO [#C] weechat install and set up
+
+* Sickbeard
+
+** TODO [#B] sickbeard name files in download and move to movies and tv
+   :LOGBOOK:  
+   - State "TODO"       from ""           [2016-08-10 Wed 18:27] \\
+     sickbeard rename video files for kodi
+   :END:
+

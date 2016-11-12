@@ -1,0 +1,38 @@
+[general]
+status_path = ~/.vdirsyncer/status/
+
+# Google - caldav
+[pair calendar]
+a = calendar_local
+b = calendar_remote
+metadata = ["color", "displayname"]
+collections = ["from b", "from a"]
+conflict_resolution = a wins
+
+[storage calendar_local]
+type = filesystem
+path = ~/.calendars/google/
+fileext = .ics
+
+[storage calendar_remote]
+type = google_calendar
+token_file = ~/.vdirsyncer/google-token-calendars
+client_id = "314206871896-qmgkjvqf8iqttjdt4p89kneapkc3f5vh.apps.googleusercontent.com"
+client_secret = "8pWYhPVwDYkix-Ohb4m9ox-m"
+
+# Google - carddav
+[pair contacts]
+a = contacts_local
+b = contacts_remote
+collections = ["from b"]
+
+[storage contacts_local]
+type = filesystem
+path = ~/.contacts/
+fileext = .vcf
+
+[storage contacts_remote]
+type = google_contacts
+token_file = ~/.vdirsyncer/google-token-contacts
+client_id = "314206871896-clpc33dpo164iu17fqsadvgp5cu4v89l.apps.googleusercontent.com"
+client_secret = "-_CbxKJ_EAex_EH3yYlPTp16"

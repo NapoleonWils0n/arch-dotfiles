@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# jekyll install
+
+# ruby install
+sudo pacman -S ruby
+
+# Before you use RubyGems, you should add $(ruby -e "print Gem.user_dir")/bin to your $PATH.
+# You can do this by adding the following line to ~/.bashrc:
+
+```
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+```
+
+# Before installing Jekyll make sure to update RubyGems.
+
+```
+gem update
+```
+
+# Then install Jekyll using the gem command.
+
+```
+gem install jekyll
+```

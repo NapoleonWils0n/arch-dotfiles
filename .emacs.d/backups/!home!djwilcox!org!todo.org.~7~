@@ -1,0 +1,37 @@
+* Tasks
+** mac osx to do list
+*** IN-PROGRESS mac osx dotfiles
++ create dotfiles programs installed with homebrew
+*** TODO youtube-dl install
+*** TODO weechat install and set up
+*** TODO mpd mpc ncmpc set up 
++ create dot files for mpd, mpc and ncmpc
++ connect to nfs share on mac osx
+*** DONE Tunnelbrick macosx
+    CLOSED: [2016-08-02 Tue 01:01]
++ tunnelbrick with pia openvpn
++ tunnelbrick and dnscrypt settings
+*** DONE syncthing sync between linux and mac
+    CLOSED: [2016-08-01 Mon 01:23]
+** TODO emacs set up						     :ATTACH:
+   :LOGBOOK:  
+   - State "TODO"       from ""           [2016-08-07 Sun 01:33] \\
+     new todo note added
+   :END:      
+   :PROPERTIES:
+   :Attachments: attach.txt
+   :ID:       179741b6-48bc-4901-b6d8-24763636a0bc
+   :END:
++Learn emacs keyboard shortcuts
+*** emacs org mode
++ learn org mode keyboard shortcuts
+*** DONE emacs capture
+    CLOSED: [2016-08-06 Sat 15:27]
+    :LOGBOOK:  
+    - State "DONE"       from "IN-PROGRESS" [2016-08-06 Sat 15:27] \\
+      finished task
+    - State "IN-PROGRESS" from "TODO"       [2016-08-06 Sat 15:26]
+    - State "TODO"       from ""           [2016-08-06 Sat 15:25] \\
+      log note testing
+    :END:      
++ org-protocol-capture-html

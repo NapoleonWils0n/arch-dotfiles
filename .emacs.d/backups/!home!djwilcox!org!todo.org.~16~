@@ -1,0 +1,49 @@
+* Tasks
+
+** mac osx to do list
+*** IN-PROGRESS mac osx dotfiles
++ create dotfiles programs installed with homebrew
+*** TODO [#A] mpd mpc ncmpc set up
++ create dot files for mpd, mpc and ncmpc
++ connect to nfs share on mac osx
+*** TODO [#C] weechat install and set up
+** arch linux to do list
+*** TODO [#A] luks encrypted container [%]
+    :LOGBOOK:  
+    - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 00:50]
+    - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 00:50]
+    - State "TODO"       from ""           [2016-08-10 Wed 00:36] \\
+      create luks container
+    :END:      
+    - [ ] create a luks encrypted container to store sensitive info
+    - [ ] create bash script to select luks container and mount and umount it
+*** TODO [#B] emacs evil ranger
+    :LOGBOOK:  
+    - State "TODO"       from ""           [2016-08-10 Wed 00:48] \\
+      evil ranger
+    :END:      
+    install evil ranger file manager for emacs
+** pfsense update [0/1]
+- [ ] update pfsense and backup
+** sickbeard
+*** TODO [#B] sickbeard name files in download and move to movies and tv
+    :LOGBOOK:  
+    - State "TODO"       from ""           [2016-08-10 Wed 18:27] \\
+      sickbeard rename video files for kodi
+    :END:
+*** [[http://www.bbc.co.uk/news/world-europe-37044519][Germany in new anti-terror plan to thwart Islamist militants - BBC News]] :website:
+[2016-08-11 Thu 12:46] "I propose that German citizens who are fighting with terror militias in other countries, and take part in combat operations there, if they have a second nationality - and only then - they would lose German citizenship," he told a news conference.
+"My proposals are limited to the points that can lead to more security rapidly," the minister said. "Other points will be discussed by the parties. We need a workable consensus in the coalition."
+German media report that the centre-left Social Democrats (SPD) - coalition partners of the conservative Christian Democrats (CDU) - strongly oppose any general ban on dual citizenship. The Greens are also against the idea.
+The security issue has become intensely political, as the country prepares for general elections next year and earlier regional elections.
+** WAITING new item						 :ATTACH:dev:
+   :LOGBOOK:  
+   - State "WAITING"    from "TODO"       [2016-08-11 Thu 13:04] \\
+     waiting for godot
+   - State "TODO"       from ""           [2016-08-11 Thu 12:50] \\
+     new tofdo
+   :END:      
+   :PROPERTIES:
+   :Attachments: test.txt
+   :ID:       347FB0B6-504E-46DD-A29D-6D50615C04BF
+   :END:

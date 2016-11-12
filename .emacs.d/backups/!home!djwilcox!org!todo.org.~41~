@@ -1,0 +1,53 @@
+#+STARTUP: content
+
+* Tasks
+
+* Arch linux to do list
+** IN-PROGRESS [#A] luks encrypted container [50%]
+   :LOGBOOK:  
+   - State "IN-PROGRESS" from "TODO"       [2016-08-11 Thu 21:59]
+   - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 00:50]
+   - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 00:50]
+   - State "TODO"       from ""           [2016-08-10 Wed 00:36] \\
+     create luks container
+   :END:      
+   - [X] create a luks encrypted container to store sensitive info
+   - [ ] create bash script to select luks container and mount and umount it
+** TODO [#A] unbound dnscrypt find fix
+    :LOGBOOK:  
+    - State "TODO"       from ""           [2016-08-12 Fri 20:47] \\
+      unbound dnscrypt proxy not working find fix
+    :END:      
+   unbound do not query localhost not working with dnscrypt proxy
+** TODO [#B] emacs evil ranger
+   :LOGBOOK:  
+   - State "TODO"       from ""           [2016-08-10 Wed 00:48] \\
+     evil ranger
+   :END:      
+   install evil ranger file manager for emacs
+  
+* Mac osx to do list
+** IN-PROGRESS [#A] mac osx dotfiles
+   + create dotfiles programs installed with homebrew
+** TODO [#A] mpd mpc ncmpc set up
+   + create dot files for mpd, mpc and ncmpc
+   + connect to nfs share on mac osx
+** TODO [#C] weechat install and set up
+
+* Sickbeard
+** TODO [#B] sickbeard name files in download and move to movies and tv
+   :LOGBOOK:  
+   - State "TODO"       from ""           [2016-08-10 Wed 18:27] \\
+     sickbeard rename video files for kodi
+   :END:
+
+* Football
+** IN-PROGRESS Match of the Day
+   SCHEDULED: <2016-08-13 Sat 22:30-23:55>
+   :LOGBOOK:  
+   - State "IN-PROGRESS" from "TODO"       [2016-08-13 Sat 22:45]
+   - State "TODO"       from ""           [2016-08-13 Sat 18:24] \\
+     watch match of the day and gary in his pants
+   :END:      
+   
+

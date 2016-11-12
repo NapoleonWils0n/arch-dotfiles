@@ -1,0 +1,133 @@
+* Plain text project
+  :PROPERTIES:
+  :CUSTOM_ID: plain-text-project
+  :END:
+
+** Sections
+   :PROPERTIES:
+   :CUSTOM_ID: sections
+   :END:
+
+-  Purpose of the project
+-  Overview of plain text
+-  Using plain text in practice
+-  How to manage notes
+-  Plain text Apps
+-  Workflows
+-  FAQs
+-  Summary of resources
+-  Notes on specific apps
+
+** Purpose of the project
+   :PROPERTIES:
+   :CUSTOM_ID: purpose-of-the-project
+   :END:
+
+Explore ways of using plain text for personal organising, managing
+information, and communicating - then writing a simple guide or set of
+how-to notes.
+
+** Overview of plain text
+   :PROPERTIES:
+   :CUSTOM_ID: overview-of-plain-text
+   :END:
+
+Write a section drawing on:
+
+-  [[http://plaintext-productivity.net/][Introduction | Plaintext
+   Productivity]] todo.txt, notes and organising. How to use with
+   Windows.
+-  [[http://blog.scottlowe.org/2015/04/06/plain-text-productivity-experiment/][The
+   Plain Text Productivity Experiment · Scott's Weblog]]
+-  [[https://zapier.com/blog/plain-text-files-for-productivity/][10
+   Plain Text Files You Should Have on Your Desktop for Higher
+   Productivity]]
+
+** Using plain text in practice
+   :PROPERTIES:
+   :CUSTOM_ID: using-plain-text-in-practice
+   :END:
+
+Examples of using plain text
+
+-  Todo lists
+-  Project planning
+-  Collaborative documents
+-  Calendars
+
+Key elements of plain text
+
+-  Syntax
+-  File extensions
+-  Desktop and mobile apps to provide an interface with text files
+
+** How to manage notes
+   :PROPERTIES:
+   :CUSTOM_ID: how-to-manage-notes
+   :END:
+
+-  Where to keep notes
+-  What file extensions to use
+-  Storing and syncing notes
+
+** Favourite plain text apps
+   :PROPERTIES:
+   :CUSTOM_ID: favourite-plain-text-apps
+   :END:
+
+Set of apps that can cover the examples above (todo, projects etc)
+
+Specific apps for plain paper activities
+
+-  Taskpaper apps: Taskpaper for Mac, Taskmator
+-  Foldingtext
+-  Swiftodo
+
+General editors
+
+-  Atom
+-  Editorial
+-  Drafts
+-  [[http://multimarkdown.com/][The best MultiMarkdown editor just got
+   better!]]
+
+Roundups of apps
+
+-  [[http://brettterpstra.com/ios-text-editors/][iTextEditors - iPhone
+   and iPad text/code editors and writing tools compared]]
+
+** Workflows
+   :PROPERTIES:
+   :CUSTOM_ID: workflows
+   :END:
+
+Develop personal workflows for the examples above. See what other people
+have done -
+
+-  [[http://brettterpstra.com/2016/06/20/my-current-blogging-workflow/][My
+   current blogging workflow - BrettTerpstra.com]]
+
+** FAQs
+   :PROPERTIES:
+   :CUSTOM_ID: faqs
+   :END:
+
+Lists of questions and answers around the topics above
+
+** Summary of resources
+   :PROPERTIES:
+   :CUSTOM_ID: summary-of-resources
+   :END:
+
+Good blog posts, and also a list of people working in plain text
+
+** Notes on specific apps
+   :PROPERTIES:
+   :CUSTOM_ID: notes-on-specific-apps
+   :END:
+
+We may need sections/other docs covering
+
+-  Taskpaper
+-  Drafts
+-  Editorial

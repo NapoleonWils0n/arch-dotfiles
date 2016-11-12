@@ -1,0 +1,434 @@
+#+STARTUP: content
+
+* Web
+
+* Emacs
+** [[https://www.emacswiki.org/emacs/EmacsAsDaemon][EmacsWiki: Emacs As Daemon]] :website:
+[2016-08-07 Sun 15:55] Emacs as Daemon on OS X using Launchd
+
+If you’re running Emacs 23, you can run Emacs As Daemon via OS X’s launchd. The easiest solution is to use a tool like Lingon to create the plist file or can create one manually like this:
+
+#+BEGIN_EXAMPLE
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+        "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
+     <plist version="1.0">
+      <dict> 
+        <key>Label</key>
+        <string>gnu.emacs.daemon</string>
+        <key>ProgramArguments</key>
+        <array>
+          <string>/Applications/Emacs.app/Contents/MacOS/Emacs</string>
+          <string>--daemon</string>
+        </array>
+       <key>RunAtLoad</key>
+       <true/>
+       <key>ServiceDescription</key>
+       <string>Gnu Emacs Daemon</string>
+       <key>UserName</key>
+       <string>[YOUR USERNAME HERE]</string>
+      </dict>
+    </plist>
+#+END_EXAMPLE
+
+This can then be installed in /Library/LaunchAgents and loaded via:
+
+    sudo launchctl load -w /Library/LaunchAgents/gnu.emacs.daemon.plist
+** [[https://www.emacswiki.org/emacs/Magit][EmacsWiki: Magit]] :website:
+   :PROPERTIES:
+   :ID:       08b908db-4f8b-4d81-be0e-dc1df157ea2c
+   :END:
+[2016-08-12 Fri 20:51] Getting started with Magit is really easy:
+
+M-x magit-status to see git status, and in the status buffer:
+s to stage files
+c c to commit (type the message then C-c C-c to actually commit)
+b b to switch to another branch
+Other handy keys:
+
+P u to do a git push
+F u to do a git pull
+try to press TAB
+
+** [[http://orgmode.org/manual/org_002dcrypt_002eel.html][org-crypt.el - The Org Manual]] :website:
+ [2016-08-25 Thu 23:19] 15.11 org-crypt.el
+
+ Org-crypt will encrypt the text of an entry, but not the headline, or properties. Org-crypt uses the Emacs EasyPG library to encrypt and decrypt files.
+
+ Any text below a headline that has a ‘:crypt:’ tag will be automatically be encrypted when the file is saved. If you want to use a different tag just customize the org-crypt-tag-matcher setting.
+
+ To use org-crypt it is suggested that you have the following in your .emacs:
+
+#+BEGIN_EXAMPLE
+      (require 'org-crypt)
+      (org-crypt-use-before-save-magic)
+      (setq org-tags-exclude-from-inheritance (quote ("crypt")))
+     
+      (setq org-crypt-key nil)
+	;; GPG key to use for encryption
+	;; Either the Key ID or set to nil to use symmetric encryption.
+     
+      (setq auto-save-default nil)
+	;; Auto-saving does not cooperate with org-crypt.el: so you need
+	;; to turn it off if you plan to use org-crypt.el quite often.
+	;; Otherwise, you'll get an (annoying) message each time you
+	;; start Org.
+     
+	;; To turn it off only locally, you can insert this:
+	;;
+	;; # -*- buffer-auto-save-file-name: nil; -*-
+#+END_EXAMPLE
+
+Excluding the crypt tag from inheritance prevents already encrypted text being encrypted again.
+** [[http://orgmode.org/worg/org-hacks.html][Org ad hoc code, quick hacks and workarounds]] :website:
+ [2016-08-24 Wed 22:42] Reload Org
+
+ As of Org version 6.23b (released Sunday Feb 22, 2009) there is a new function to reload org files.
+
+ Normally you want to use the compiled files since they are faster. If you update your org files you can easily reload them with
+
+ #+BEGIN_EXAMPLE
+ M-x org-reload
+ #+END_EXAMPLE
+
+ If you run into a bug and want to generate a useful backtrace you can reload the source files instead of the compiled files with
+
+ #+BEGIN_EXAMPLE
+ C-u M-x org-reload
+ #+END_EXAMPLE
+
+ and turn on the "Enter Debugger On Error" option. Redo the action that generates the error and cut and paste the resulting backtrace. To switch back to the compiled version just reload again with
+
+ #+BEGIN_EXAMPLE
+ M-x org-reload
+ #+END_EXAMPLE
+
+* Linux
+** [[http://steve-parker.org/articles/luks/][Articles - Linux Encrypted Filesystems with LUKS { steve-parker.org }]] :website:
+[2016-08-15 Mon 00:08] 
+
+#+BEGIN_EXAMPLE
+#!/bin/sh
+
+case $1 in
+  start)
+        cryptsetup luksOpen /dev/sda8 crypto
+        echo "Mounting /crytpo..."
+        mount /dev/mapper/crypto /crypto
+        ;;
+  stop)
+        echo "Unmounting /crytpo..."
+        umount /crypto
+        cryptsetup luksClose crypto
+        ;;
+  *)
+        echo "Usage: crypt [ start | stop ]"
+        ;;
+esac
+#+END_EXAMPLE
+
+** [[http://www.howtogeek.com/267376/how-to-automatically-correct-spelling-and-typos-when-using-cd-on-linux/][How to Automatically Correct Spelling and Typos When Using “cd” on Linux]] :website:
+[2016-08-20 Sat 16:33] Scroll to the bottom of the .bashrc file and add the following line to the end of the file.
+
+#+BEGIN_EXAMPLE
+shopt -s cdspell
+#+END_EXAMPLE
+
+** [[http://man.cx/zathura(1)][Manpage for zathura - man.cx manual pages]] :website:
+[2016-08-20 Sat 20:06] NAME
+
+zathura − a PDF viewer
+
+SYNOPSIS
+
+zathura [-e xid] [-c path] [file] [password]
+
+DESCRIPTION
+
+zathura is a highly customizable and functional PDF viewer based on the poppler rendering library and the gtk+ toolkit. zathura provides a minimalistic and space saving interface, with a focus on keyboard interaction.
+
+OPTIONS
+
+-e xid
+
+Reparents to window specified by xid. -c path Path to the config directory
+
+DEFAULT SETTINGS
+
+Shortcuts
+
+J
+
+Go to next page
+
+K
+
+Go to previous page
+
+h
+
+Scroll to the left
+
+k
+
+Scroll upwards
+
+j
+
+Scroll downwards
+
+^f
+
+Scroll page down
+
+^b
+
+Scroll page up
+
+^d
+
+Scroll half a page down
+
+^u
+
+Scroll half a page up
+
+l
+
+Scroll to the right
+
+/
+
+Search forwards
+
+?
+
+Search backwards
+
+n
+
+Search last keyword forwards
+
+N
+
+Search last keyword backwards
+
+Tab
+
+Toggle index
+
+o
+
+Open a file
+
+a
+
+Zoom to fit
+
+s
+
+Zoom to width
+
+f
+
+Follow a link on the page
+
+m
+
+Mark current position and save it in register specified by a character
+
+’
+
+Go to saved position specified by the ensuing character
+
+r
+
+Rotate the page
+
+R
+
+Reload the document
+
+O
+
+Change goto mode (L: search labels, D: default, O: manual offset)
+
+^i
+
+Invert the colors of the page
+
+i
+
+Change to insert mode
+
+v
+
+Change to visual mode
+
+:
+
+Focus inputbar
+
+Backspace
+
+Delete last character in the buffer
+
+F5
+
+Toggle fullscreen mode
+
+^n
+
+Toggle statusbar visibility
+
+^m
+
+Toggle inputbar visibility
+
+Esc | ^c
+
+Abort
+
+^q
+
+Quit the program
+
+Index commands
+
+k
+
+Navigate to one element above the current position
+
+j
+
+Navigate to one element below the current position
+
+h
+
+Collapse current element
+
+l
+
+Expand current element
+
+Space | Return
+
+Select current element
+
+Buffered commands
+
+gg
+
+Go to the first page
+
+GG
+
+Go to the last page
+
+[0-9]+G
+
+Go to the specified page
+
+zI
+
+Zoom in
+
+zO
+
+Zoom out
+
+z0
+
+Zoom to the original size
+
+[0-9]+Z
+
+Zoom to the given level
+
+[0-9]+%
+
+Move to the given position
+
+Commands
+
+blist
+
+List and open bookmark
+
+bmark
+
+Bookmark current page
+
+close
+
+Close current file
+
+coffset
+
+Set page offset
+
+delbmark
+
+Delete given bookmark
+
+export
+
+Export images or attached files
+
+info
+
+Show information about the document
+
+map
+
+Map shortcut functions (map <key> <function> <argument> <mode>)
+
+open
+
+Open a file
+
+print
+
+Print the document
+
+quit
+
+Quit the program
+
+rotate
+
+Rotate the page
+
+set
+
+Set an option (set <id> <value>)
+
+write
+
+Save the document
+
+Inputbar shortcuts
+
+Up
+
+Move up in the command history
+
+Down
+
+Move down in the command history
+
+Tab | Shift + Tab
+
+Tab completion
+
+^w
+
+Delete last word
+
+CONFIGURATION
+
+The complete configuration including the appearance and shortcuts of the program are defined in a separate file named config.h. In this file you are able to change and adjust all the settings of zathura according to your wishes.
+
+In addition you can create a zathurarc file (default path: ~/.config/zathura/zathurarc) to overwrite settings and keybindings by using the set and map function. For more information please check the faq on the website: http://pwmt.org/projects/zathura
+** [[https://librevault.com/][Librevault]] :website:
+[2016-08-22 Mon 20:29] File synchronization designed with privacy in mind

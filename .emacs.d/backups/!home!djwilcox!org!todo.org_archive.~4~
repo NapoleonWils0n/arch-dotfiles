@@ -1,0 +1,303 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/djwilcox/org/todo.org
+
+
+* WAITING todo syntax
+  :LOGBOOK:  
+  - State "WAITING"    from "IN-PROGRESS" [2016-08-07 Sun 01:37] \\
+    waiting to do something
+  - State "IN-PROGRESS" from "TODO"       [2016-08-07 Sun 01:37]
+  - State "TODO"       from "TODO"       [2016-08-07 Sun 01:36] \\
+    made change
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-07 Sun 01:53
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/emacs set up
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: WAITING
+  :ARCHIVE_ITAGS: ATTACH
+  :END:
+
+* DONE todo syntax
+  CLOSED: [2016-08-09 Tue 14:49]
+  :LOGBOOK:  
+  - State "DONE"       from "IN-PROGRESS" [2016-08-09 Tue 14:49] \\
+    finisghed syntax
+  - State "IN-PROGRESS" from "TODO"       [2016-08-07 Sun 01:37]
+  - State "TODO"       from "TODO"       [2016-08-07 Sun 01:36] \\
+    made change
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 14:49
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/TODOk EMACSu SETu up
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :ARCHIVE_ITAGS: ATTACH
+  :END:
+
+* DONE emacs capture
+    CLOSED: [2016-08-06 Sat 15:27]
+    :LOGBOOK:  
+    - State "DONE"       from "IN-PROGRESS" [2016-08-06 Sat 15:27] \\
+      finished task
+    - State "IN-PROGRESS" from "TODO"       [2016-08-06 Sat 15:26]
+    - State "TODO"       from ""           [2016-08-06 Sat 15:25] \\
+      log note testing
+    :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 14:50
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/TODOk EMACSu SETu up
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :ARCHIVE_ITAGS: ATTACH
+  :END:
++ org-protocol-capture-html
+
+* DONE TODOk EMACSu SETu up					     :ATTACH:
+   CLOSED: [2016-08-09 Tue 14:53]
+   :LOGBOOK:  
+   - State "DONE"       from "TODO"       [2016-08-09 Tue 14:53] \\
+     finished task
+   - State "TODO"       from ""           [2016-08-09 Tue 14:52] \\
+     done
+   - State "TODO"       from ""           [2016-08-07 Sun 01:33] \\
+     new todo note added
+   :END:      
+   :PROPERTIES:
+   :Attachments: attach.txt
+   :ID:       179741b6-48bc-4901-b6d8-24763636a0bc
+   :ARCHIVE_TIME: 2016-08-09 Tue 14:53
+   :ARCHIVE_FILE: ~/org/todo.org
+   :ARCHIVE_OLPATH: Tasks
+   :ARCHIVE_CATEGORY: todo
+   :ARCHIVE_TODO: DONE
+   :END:
++Learn emacs keyboard shortcuts
+** emacs org mode
++ learn org mode keyboard shortcuts
+
+* DONE syncthing sync between linux and mac
+  CLOSED: [2016-08-01 Mon 01:23]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 14:53
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/mac osx to do list
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Tunnelbrick macosx
+    CLOSED: [2016-08-02 Tue 01:01]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 14:53
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/mac osx to do list
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
++ tunnelbrick with pia openvpn
++ tunnelbrick and dnscrypt settings
+
+* DONE new to below item [100%]
+  CLOSED: [2016-08-09 Tue 16:06]
+  :LOGBOOK:  
+  - State "DONE"       from "IN-PROGRESS" [2016-08-09 Tue 16:06] \\
+    finished task
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 16:07
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  - [X] checlist
+
+* DONE new to below item [100%]
+  CLOSED: [2016-08-09 Tue 16:06]
+  :LOGBOOK:  
+  - State "DONE"       from "IN-PROGRESS" [2016-08-09 Tue 16:06] \\
+    finished task
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 16:07
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  - [X] checlist
+
+* DONE | emacs to do [100%]
+  CLOSED: [2016-08-09 Tue 19:38]
+  :LOGBOOK:  
+  - State "DONE"       from "TODO"       [2016-08-09 Tue 19:38] \\
+    emacs mac file done
+  - State "TODO"       from ""           [2016-08-09 Tue 19:37] \\
+    still to do
+  - State "TODO"       from ""           [2016-08-09 Tue 15:03] \\
+    emacs do list
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-09 Tue 19:38
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  - [X] mac .emacs file
+  - [X] general set up
+
+
+  
+
+* DONE [#B] youtube-dl install
+  CLOSED: [2016-08-10 Wed 15:29]
+  :LOGBOOK:  
+  - State "DONE"       from "IN-PROGRESS" [2016-08-10 Wed 15:29] \\
+    installed youtube-dl
+  - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 15:28]
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-10 Wed 15:29
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/mac osx to do list
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE [#A] ffmpeg install
+  CLOSED: [2016-08-10 Wed 15:36]
+  :LOGBOOK:  
+  - State "DONE"       from "TODO"       [2016-08-10 Wed 15:36] \\
+    installed ffmpeg on mac
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-10 Wed 15:36
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/mac osx to do list
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE kodi scripts install
+  CLOSED: [2016-08-10 Wed 16:10]
+  :LOGBOOK:  
+  - State "DONE"       from "TODO"       [2016-08-10 Wed 16:10] \\
+    kodi bash scripts installed
+  - State "TODO"       from ""           [2016-08-10 Wed 16:08] \\
+    install scripts for kodi
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-10 Wed 16:10
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/mac osx to do list
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE [#A] sync org directory with syncthing
+  CLOSED: [2016-08-10 Wed 17:16]
+  :LOGBOOK:  
+  - State "DONE"       from "IN-PROGRESS" [2016-08-10 Wed 17:16] \\
+    org directory syncthing sync complete
+  - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 17:14]
+  - State "TODO"       from ""           [2016-08-10 Wed 16:26] \\
+    sync org mode directory with syncthing
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-10 Wed 17:17
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks/arch linux to do list
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE synology
+  CLOSED: [2016-08-10 Wed 17:58]
+  :LOGBOOK:  
+  - State "DONE"       from ""           [2016-08-10 Wed 17:58] \\
+    synology pia openvpn set up for download station
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-10 Wed 17:59
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+** IN-PROGRESS synology pia openvpn set up
+   :LOGBOOK:  
+   - State "IN-PROGRESS" from "TODO"       [2016-08-10 Wed 17:48]
+   :END:      
+
+* DONE chromium [1/1]
+  CLOSED: [2016-08-10 Wed 21:25]
+  :LOGBOOK:  
+  - State "DONE"       from ""           [2016-08-10 Wed 21:25] \\
+    exported bookmarks and then imported
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-10 Wed 21:26
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  - [X] sync chromium bookmarks without google
+
+* DONE new item
+  CLOSED: [2016-08-11 Thu 12:38]
+  :LOGBOOK:  
+  - State "DONE"       from "IN-PROGRESS" [2016-08-11 Thu 12:38] \\
+    finished this
+  - State "IN-PROGRESS" from "TODO"       [2016-08-11 Thu 12:37]
+  - State "TODO"       from ""           [2016-08-11 Thu 12:37] \\
+    new to do item
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-11 Thu 12:38
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE pfsense update
+   CLOSED: [2016-08-11 Thu 22:30]
+   :LOGBOOK:  
+   - State "DONE"       from ""           [2016-08-11 Thu 22:30] \\
+     upgrade to pfsense 2.3.2, had to unistall ngblocker before install
+   :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-11 Thu 22:31
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
++ update pfsense to version 2.3.2
++ find out why 2.3.2 update fails with pkg error
++ unistall pfblocker ng
+
+* DONE org directory put under git
+  CLOSED: [2016-08-11 Thu 23:03]
+  :LOGBOOK:  
+  - State "DONE"       from "TODO"       [2016-08-11 Thu 23:03] \\
+    org directory put under version control, remote repo set up on nas clone to mac
+  - State "IN-PROGRESS" from "TODO"       [2016-08-11 Thu 22:03]
+  - State "TODO"       from ""           [2016-08-11 Thu 22:01] \\
+    put ~/org directory under git version control
+  :END:      
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-08-11 Thu 23:04
+  :ARCHIVE_FILE: ~/org/todo.org
+  :ARCHIVE_OLPATH: Tasks
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:

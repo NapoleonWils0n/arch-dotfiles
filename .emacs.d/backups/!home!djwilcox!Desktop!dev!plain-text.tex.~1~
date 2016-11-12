@@ -1,0 +1,458 @@
+% Created 2016-08-23 Tue 22:28
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{David Wilcox}
+\date{\today}
+\title{Plain Text}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\setcounter{secnumdepth}{0}
+
+\section*{Plain text project}
+\label{sec-1}
+
+\subsection*{Sections}
+\label{sec-1-1}
+
+\begin{itemize}
+\item Purpose of the project
+\item Overview of plain text
+\item Using plain text in practice
+\item How to manage notes
+\item Plain text Apps
+\item Workflows
+\item FAQs
+\item Summary of resources
+\item Notes on specific apps
+\end{itemize}
+
+\subsection*{Purpose of the project}
+\label{sec-1-2}
+
+Explore ways of using plain text for personal organising, managing
+information, and communicating - then writing a simple guide or set of
+how-to notes.
+
+\subsection*{Overview of plain text}
+\label{sec-1-3}
+
+Write a section drawing on:
+
+\begin{itemize}
+\item \href{http://plaintext-productivity.net/}{Introduction | Plaintext Productivity} 
+   todo.txt, notes and organising. How to use with Windows.
+\item \href{http://blog.scottlowe.org/2015/04/06/plain-text-productivity-experiment/}{The Plain Text Productivity Experiment · Scott's Weblog}
+\item \href{https://zapier.com/blog/plain-text-files-for-productivity/}{10 Plain Text Files You Should Have on Your Desktop for Higher Productivity}
+\end{itemize}
+
+\subsection*{Using plain text in practice}
+\label{sec-1-4}
+
+Examples of using plain text
+
+\begin{itemize}
+\item Todo lists
+\item Project planning
+\item Collaborative documents
+\item Calendars
+\end{itemize}
+
+Key elements of plain text
+
+\begin{itemize}
+\item Syntax
+\item File extensions
+\item Desktop and mobile apps to provide an interface with text files
+\end{itemize}
+
+\subsection*{How to manage notes}
+\label{sec-1-5}
+
+\begin{itemize}
+\item Where to keep notes
+\item What file extensions to use
+\item Storing and syncing notes
+\end{itemize}
+
+\subsection*{Favourite plain text apps}
+\label{sec-1-6}
+
+Set of apps that can cover the examples above (todo, projects etc)
+
+Specific apps for plain paper activities
+
+\begin{itemize}
+\item Taskpaper apps: Taskpaper for Mac, Taskmator
+\item Foldingtext
+\item Swiftodo
+\end{itemize}
+
+\subsection*{Mac text editors}
+\label{sec-1-7}
+
+\subsubsection*{Multimarkdown}
+\label{sec-1-7-1}
+
+\begin{quote}
+The best MultiMarkdown editor just got better!
+\end{quote}
+
+\begin{itemize}
+\item \href{http://multimarkdown.com/}{MultiMarkdown Composer}
+\item \href{http://itunes.apple.com/us/app/multimarkdown-composer/id593294811?ls\%3D1&mt\%3D12}{MultiMarkdown Composer on the Mac App Store}
+\end{itemize}
+
+\subsubsection*{TextWrangler}
+\label{sec-1-7-2}
+
+\begin{quote}
+TextWrangler is an all-purpose text and code editor for Mac OS X, based on the same award-winning technology as BBEdit,\\
+    our leading professional HTML and text editor.
+\end{quote}
+
+\begin{itemize}
+\item \href{http://www.barebones.com/products/textwrangler/}{Textwrangler}
+\end{itemize}
+
+\subsection*{iOS text editors}
+\label{sec-1-8}
+
+\subsubsection*{Editorial}
+\label{sec-1-8-1}
+
+Desktop-Class Plain Text Productivity on iOS
+
+\begin{quote}
+Editorial is a plain text editor for iOS with great Markdown support and powerful automation tools.
+
+Make yourself at home with custom workflows, snippets, templates, and themes.
+
+Whether you write personal notes, todo lists, blog posts, screenplays or your next novel — Editorial provides powerful productivity tools without getting in your way.
+\end{quote}
+
+\begin{itemize}
+\item \href{http://omz-software.com/editorial/}{Editorial}
+\item \href{https://itunes.apple.com/app/editorial/id673907758}{Editorial on the App Store}
+\end{itemize}
+
+\subsubsection*{Drafts}
+\label{sec-1-8-2}
+
+\begin{quote}
+Drafts is a different kind of note taking app.\\
+In Drafts, text comes first – open the app and get a new, blank draft. Get your text down quickly, then act on it with powerful actions.
+\end{quote}
+
+\begin{itemize}
+\item \href{http://agiletortoise.com/drafts/}{Drafts}
+\item \href{https://itunes.apple.com/app/id905337691?mt\%3D8&uo\%3D4&at\%3D11l4Cf&ct\%3Dwebsite}{Drafts on the App Store}
+\end{itemize}
+
+\subsection*{Cross platform text editors}
+\label{sec-1-9}
+
+\subsubsection*{Atom}
+\label{sec-1-9-1}
+
+\begin{quote}
+A hackable text editor for the 21st Century
+\end{quote}
+
+\begin{itemize}
+\item \href{https://atom.io/}{Atom}
+\end{itemize}
+
+\subsubsection*{Sublime Text}
+\label{sec-1-9-2}
+
+\begin{quote}
+Sublime Text is a sophisticated text editor for code, markup and
+prose. You'll love the slick user interface, extraordinary features
+and amazing performance.
+\end{quote}
+
+\begin{itemize}
+\item \href{https://www.sublimetext.com/}{Sublime text}
+\end{itemize}
+
+\subsubsection*{Vim}
+\label{sec-1-9-3}
+
+\begin{quote}
+Vim is a highly configurable text editor built to make creating and
+changing any kind of text very efficient.\\
+  It is included as "vi" with most UNIX systems and with Apple OS X.
+\end{quote}
+
+\begin{itemize}
+\item \href{http://www.vim.org/}{Vim}
+\end{itemize}
+
+\begin{itemize}
+\item vim plugins
+\label{sec-1-9-3-1}
+
+\begin{itemize}
+\item \href{https://github.com/vim-pandoc/vim-pandoc}{vim pandoc}
+\item \href{https://github.com/vim-pandoc/vim-pandoc-syntax}{vim pandoc syntax}
+\item \href{https://github.com/mattn/emmet-vim}{emmet vim}
+\item \href{https://github.com/tpope/vim-surround}{vim surround}
+\item \href{https://github.com/scrooloose/nerdtree}{nerdtree}
+\end{itemize}
+
+\begin{itemize}
+\item Vim resources
+\label{sec-1-9-3-1-1}
+
+\begin{itemize}
+\item \href{http://vimcasts.org/episodes/archive/}{vimcasts tutorials}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{Emacs}
+\label{sec-1-9-4}
+
+\begin{quote}
+An extensible, customizable, free/libre text editor --- and more.
+\end{quote}
+
+\begin{itemize}
+\item \href{https://www.gnu.org/software/emacs/}{Emacs}
+\end{itemize}
+
+\begin{itemize}
+\item Emacs resources
+\label{sec-1-9-4-1}
+
+\begin{itemize}
+\item \href{http://orgmode.org/}{org mode}
+\item \href{http://jblevins.org/projects/markdown-mode/}{markdown mode}
+\end{itemize}
+\end{itemize}
+
+\subsection*{Roundups of apps}
+\label{sec-1-10}
+
+\begin{itemize}
+\item \href{http://brettterpstra.com/ios-text-editors/}{iTextEditors - iPhone and iPad text/code editors and writing tools compared}
+\end{itemize}
+
+\subsection*{Workflows}
+\label{sec-1-11}
+
+Develop personal workflows for the examples above. See what other people
+have done -
+
+\begin{itemize}
+\item \href{http://brettterpstra.com/2016/06/20/my-current-blogging-workflow/}{My
+current blogging workflow - BrettTerpstra.com}
+\end{itemize}
+
+\subsection*{FAQs}
+\label{sec-1-12}
+
+Lists of questions and answers around the topics above
+
+\subsection*{Summary of resources}
+\label{sec-1-13}
+
+Good blog posts, and also a list of people working in plain text
+
+\subsection*{Notes on specific apps}
+\label{sec-1-14}
+
+We may need sections/other docs covering
+
+\begin{itemize}
+\item Taskpaper
+\item Drafts
+\item Editorial
+\end{itemize}
+
+\section*{Markdown}
+\label{sec-2}
+
+\begin{quote}
+Markdown is a text-to-HTML conversion tool for web writers.\\
+  Markdown allows you to write using an easy-to-read, easy-to-write
+plain text format, then convert it to structurally valid XHTML (or
+HTML).
+\end{quote}
+
+\begin{itemize}
+\item \href{https://daringfireball.net/projects/markdown/}{markdown}
+\end{itemize}
+
+\subsection*{Markdown syntax}
+\label{sec-2-1}
+
+\begin{itemize}
+\item \href{https://daringfireball.net/projects/markdown/syntax}{markdown syntax}
+\end{itemize}
+
+\subsection*{The Markdown file extension}
+\label{sec-2-2}
+
+John Gruber didn't designated a file extension when he invented Markdown
+
+\begin{quote}
+John Gruber\\
+  The only file extension I would endorse is “.markdown” (I personally
+use “.text” for my own files, and have BBEdit set to use Markdown
+syntax coloring for that extension, which is why I never saw a need to
+endorse an official extension.)
+\end{quote}
+
+\subsection*{Different Markdown file extension}
+\label{sec-2-3}
+
+\begin{itemize}
+\item markdown
+\item mdown
+\item mkdn
+\item md
+\item mkd
+\item mdwn
+\item mdtxt
+\item mdtext
+\item text
+\end{itemize}
+
+\subsubsection*{Markdown extensions used by different editors}
+\label{sec-2-3-1}
+
+\begin{itemize}
+\item GitHub: markdown, mdown, mkdn, mkd, md (source)
+\item Elements Markdown Editor: markdown, mdown, mdwn, md
+\item Vim markdown: markdown, mdown, mkdn, mdwn, mkd, md
+\item Bitbucket: markdown, mdown, mkdn, mkd, md, text (source)
+\end{itemize}
+
+\begin{itemize}
+\item Markdown wikipedia article
+\label{sec-2-3-1-1}
+
+\begin{itemize}
+\item \href{https://en.wikipedia.org/wiki/Markdown}{markdown wikipedia}
+\end{itemize}
+\end{itemize}
+
+\section*{Tools}
+\label{sec-3}
+
+\subsection*{Pandoc}
+\label{sec-3-1}
+
+\begin{quote}
+If you need to convert files from one markup format into another,
+pandoc is your swiss-army knife.
+\end{quote}
+
+\begin{itemize}
+\item \href{http://pandoc.org/}{pandoc}
+\end{itemize}
+
+\subsection*{Sed}
+\label{sec-3-2}
+
+\begin{quote}
+sed (stream editor) is a non-interactive command-line text editor. sed
+is commonly used to filter text, i.e., it takes text input, performs
+some operation (or set of operations) on it, and outputs the modified
+text. sed is typically used for extracting part of a file using
+pattern matching or substituting multiple occurrences of a string
+within a file.
+\end{quote}
+
+\begin{itemize}
+\item \href{https://www.gnu.org/software/sed/}{Sed}
+\end{itemize}
+
+\subsection*{Tex Live}
+\label{sec-3-3}
+
+\begin{quote}
+\TeX{} Live is an easy way to get up and running with the \TeX{} document
+production system. It provides a comprehensive \TeX{} system with
+binaries for most flavors of Unix, including GNU/Linux, and also
+Windows. It includes all the major \TeX{}-related programs, macro
+packages, and fonts that are free software, including support for many
+languages around the world.
+\end{quote}
+
+\begin{itemize}
+\item \href{https://www.tug.org/texlive/}{Tex Live}
+\item \href{https://wiki.archlinux.org/index.php/TeX_Live}{Tex Live Arch linux wiki}
+\end{itemize}
+
+\subsection*{Texmaker}
+\label{sec-3-4}
+
+\begin{quote}
+Texmaker is a free, modern and cross-platform \LaTeX{} editor for linux,
+macosx and windows systems that integrates many tools needed to
+develop documents with \LaTeX{}, in just one application.
+\end{quote}
+
+\begin{itemize}
+\item \href{http://www.xm1math.net/texmaker/}{texmaker}
+\end{itemize}
+
+\section*{Dropbox}
+\label{sec-4}
+
+\begin{itemize}
+\item \href{https://www.dropbox.com/}{Dropbox}
+\end{itemize}
+
+\begin{quote}
+Dropbox works the way you do Get to all your files from anywhere, on
+any device, and share them with anyone.
+\end{quote}
+
+\subsection*{Dropbox on mobile devices}
+\label{sec-4-1}
+
+\begin{itemize}
+\item Linking applications to your Dropbox folder
+\end{itemize}
+
+After installing Dropbox on your mobile device you can authorize other
+mobile applications on your device to allow access to your Dropbox
+folder, by linking the the application to your Dropbox folder and
+authorizing the application.
+
+This creates an App folder in your Dropbox and inside it another folder
+with the name of the Application you authorized
+
+\begin{itemize}
+\item Manually adding Dropbox account details to an application
+\end{itemize}
+
+Some applications require you to manually enter your Dropbox username
+and password.
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

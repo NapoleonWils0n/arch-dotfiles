@@ -1,0 +1,231 @@
+# Withknown Docker
+
+# docker 
+
+# create a Dockerfile for a persistant data store
+
+# create the directories
+
+```
+mkdir -p development/{apache-server,file-uploads-volume,mariadb-database-volume,mariadb-server,www-directory-volume}
+```
+
+# change directory 
+
+```
+cd development/mariadb-database-volume
+```
+
+
+# create the www data volume image
+
+# build the www data volume image in the current directory
+
+```
+docker build -t="napoleonwilson/www_data_withknown:v1" .
+```
+
+# create the www directory volume conatiner 
+
+```
+docker run --name www_withknown napoleonwilson/www_data_withknown:v1
+```
+
+
+
+# create the file uploads volume image
+
+# build the file uploads volume image in the current directory
+
+```
+docker build -t="napoleonwilson/file_uploads_dir:v1" .
+```
+
+# create the file_uploads conatiner from file uploads volume image
+
+```
+docker run --name file_uploads napoleonwilson/file_uploads_dir:v1
+```
+
+# create the mariadb_datastore volume image
+
+# build the mysql_datastore image in the current directory
+
+```
+docker build -t="napoleonwilson/mariadb_datastore:v1" .
+```
+
+# create the mysql_data container from the mysql_datastore image
+
+```
+docker run --name mariadb_datastore napoleonwilson/mariadb_datastore:v1
+```
+
+# build mysql server image
+
+# build the image
+
+```
+docker build -t="napoleonwilson/mariadb_server:v1" .
+```
+
+# run the image and create the container
+
+```
+docker run -it napoleonwilson/mariadb_server:v1
+```
+
+# run the image with --volumes-from mariadb_datastore
+
+```
+docker run -it --volumes-from mariadb_datastore -p 3306:3306 napoleonwilson/mariadb_server:v1  
+```
+
+# run the mysql server with the mysql data store container and add name
+
+```
+docker run -d --name mariadb_server_setup --volumes-from mariadb_datastore -p 3306:3306 -e MARIADB_PASS="toormariadb!" napoleonwilson/mariadb_server:v1
+```
+
+# new root password
+toormariadb!
+
+
+# connect to the mysql server
+
+```
+mysql -uadmin -ptoormariadb! -h 172.17.0.17
+```
+
+```
+CREATE DATABASE withknown;
+GRANT ALL PRIVILEGES ON withknown.* to 'withadmin' IDENTIFIED BY 'wnko708HH£';
+FLUSH PRIVILEGES;
+exit;
+```
+
+# import mysql schema from withknown app
+
+```
+mysql -uadmin -ptoormariadb! -h 172.17.0.17 withknown < mysql.sql
+```
+
+# create the apache server image
+
+# build the apache server image in the current directory
+
+```
+docker build -t="napoleonwilson/apache_server_withknown:v1" .
+```
+
+# create container to download git into www volume
+
+```
+docker run -it --volumes-from www_withknown --name apache_git_setup napoleonwilson/apache_server_withknown:v1 /bin/bash
+```
+
+
+# dev
+
+```
+docker run -d -P --name apache_dev napoleonwilson/apache_server_withknown:v1
+```
+
+
+
+# This configuration file was created by Known's installer.
+
+```
+database = 'MySQL'
+dbname = 'withknown'
+dbpass = 'wnko708HH£'
+dbuser = 'withadmin'
+dbhost = 'mariadb_server'
+
+filesystem = 'local'
+uploadpath = '/var/uploads/'
+```
+
+# Apache config for verison 2.2
+
+```
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^(\.well\-known.*)$ /index.php/$1 [L]
+    RewriteRule ^\..* - [F]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond $1 !^(index\.php)
+    RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
+<IfModule mod_php5.c>
+    php_value upload_max_filesize 1000M
+    php_value post_max_size 1080M
+</IfModule>
+<Files  ~ "\.dist$">
+  Order allow,deny
+  Deny from all
+</Files>
+<Files  ~ "\.ini$">
+  Order allow,deny
+  Deny from all
+</Files>
+<Files ~ "\.xml$">
+  Order allow,deny
+  Deny from all
+</Files>
+
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+```
+
+# create the mysql container and run it before linking to it
+
+```
+docker run -d --name mariadb_server --volumes-from mariadb_datastore -e MARIADB_PASS="toormariadb!" napoleonwilson/mariadb_server:v1
+```
+
+
+# run as a daemon and map network port from docker to host
+
+```
+docker run -d -P --name apache_withknown --volumes-from www_withknown --volumes-from file_uploads --link mariadb_server:mariadb_server napoleonwilson/apache_server_withknown:v1
+```
+
+```
+docker run -d --name apache_withknown --volumes-from www_withknown --volumes-from file_uploads --link mariadb_server:mariadb_server napoleonwilson/apache_server_withknown:v1
+```
+
+```
+docker run -d --name apache_withknown_new --volumes-from www_withknown --volumes-from file_uploads --link mariadb_server:mariadb_server localhost:5000/apache_server_withknown:latest 
+```
+
+```
+docker run -it --volumes-from www_withknown --name git_setup_plugins localhost:5000/apache_server_withknown /bin/bash
+```
+
+```
+docker run -d --name mariadb_datastore_daemon localhost:5000/mariadb_datastore:latest
+```
+
+
+# map port
+
+```
+docker run -d -P --name withknow_7.5 --volumes-from www_withknown --volumes-from file_uploads --link mariadb_server:mariadb_server localhost:5000/apache_server_withknown:latest
+```
+
+# nginx reverse proxy
+
+```
+sudo vim /etc/nginx/nginx.conf
+```
+
+49155
+
+* start nginx
+
+```
+sudo systemctl start nginx
+```

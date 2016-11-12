@@ -1,0 +1,67 @@
+* Tasks
+** mac osx to do list
+*** IN-PROGRESS mac osx dotfiles
++ create dotfiles programs installed with homebrew
+*** TODO youtube-dl install
+*** TODO weechat install and set up
+*** TODO mpd mpc ncmpc set up 
++ create dot files for mpd, mpc and ncmpc
++ connect to nfs share on mac osx
+*** DONE Tunnelbrick macosx
+    CLOSED: [2016-08-02 Tue 01:01]
++ tunnelbrick with pia openvpn
++ tunnelbrick and dnscrypt settings
+*** DONE syncthing sync between linux and mac
+    CLOSED: [2016-08-01 Mon 01:23]
+** new item
+a new to do item added
+** TODOk EMACSu SETu up 					     :ATTACH:
+   :LOGBOOK:  
+   - State "TODO"       from ""           [2016-08-07 Sun 01:33] \\
+     new todo note added
+   :END:      
+   :PROPERTIES:
+   :Attachments: attach.txt
+   :ID:       179741b6-48bc-4901-b6d8-24763636a0bc
+   :END:
++Learn emacs keyboard shortcuts
+*** emacs org mode
++ learn org mode keyboard shortcuts
+*** IN-PROGRESS todo syntax
+    :LOGBOOK:  
+    - State "IN-PROGRESS" from "TODO"       [2016-08-07 Sun 01:37]
+    - State "TODO"       from "TODO"       [2016-08-07 Sun 01:36] \\
+      made change
+    :END:      
+*** DONE emacs capture
+    CLOSED: [2016-08-06 Sat 15:27]
+    :LOGBOOK:  
+    - State "DONE"       from "IN-PROGRESS" [2016-08-06 Sat 15:27] \\
+      finished task
+    - State "IN-PROGRESS" from "TODO"       [2016-08-06 Sat 15:26]
+    - State "TODO"       from ""           [2016-08-06 Sat 15:25] \\
+      log note testing
+    :END:      
++ org-protocol-capture-html
+** [[https://stackoverflow.com/questions/28063598/error-while-executing-plist-file-path-had-bad-ownership-permissions][terminal - Error while executing .plist file Path had bad ownership/permissions - Stack Overflow]] :website:
+[2016-08-07 Sun 16:05] up vote
+20
+down vote
+accepted
+Try changing to ownership of the .plist file, as noted here.
+
+sudo chown root /Library/LaunchDaemons/myfile.plist
+sudo chgrp wheel /Library/LaunchDaemons/myfile.plist
+It is also worth noting that these root LaunchDaemons can't be world writable, for security reasons:
+
+sudo chmod o-w /Library/LaunchDaemons/*
+shareimprove this answer
+edited Apr 11 at 22:51
+answered Jan 26 '15 at 19:15
+
+fiveclubs
+517414
+                
+ya this was the right solution but before 4 days oly i got the solution anyway thank you – vivek Jan 28 '15 at 8:31
+2               
+Can also be done with a single command: sudo chown root:wheel /Library/LaunchDaemons/myfile.plist – Eric Mar 25 at 16:06

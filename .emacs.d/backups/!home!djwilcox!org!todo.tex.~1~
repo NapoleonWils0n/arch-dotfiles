@@ -1,0 +1,51 @@
+% Created 2016-08-10 Wed 00:07
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\date{\today}
+\title{todo}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Tasks}
+\label{sec-1}
+
+\subsection{mac osx to do list}
+\label{sec-1-1}
+\subsubsection{{\bfseries\sffamily IN-PROGRESS} mac osx dotfiles}
+\label{sec-1-1-1}
+\begin{itemize}
+\item create dotfiles programs installed with homebrew
+\end{itemize}
+\subsubsection{{\bfseries\sffamily TODO} mpd mpc ncmpc set up}
+\label{sec-1-1-2}
+\begin{itemize}
+\item create dot files for mpd, mpc and ncmpc
+\item connect to nfs share on mac osx
+\end{itemize}
+\subsubsection{{\bfseries\sffamily TODO} youtube-dl install}
+\label{sec-1-1-3}
+\subsubsection{{\bfseries\sffamily TODO} weechat install and set up}
+\label{sec-1-1-4}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

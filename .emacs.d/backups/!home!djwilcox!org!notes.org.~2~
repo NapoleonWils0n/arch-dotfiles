@@ -1,0 +1,60 @@
+* Notes
+** [[http://orgmode.org/][Org mode for Emacs – Your Life in Plain Text]] :website:
+[2016-08-06 Sat 01:52] Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
+** [[http://orgmode.org/][Org mode for Emacs – Your Life in Plain Text]] :website:
+[2016-08-06 Sat 01:57] [ en - fr - ja ] 
+Support Org
+Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
+Created by Carsten Dominik in 2003, maintained by Bastien Guerry and developed by many others.
+
+Download and install
+
+
+Stable version 8.3.5 (Jul. 2016) — tar.gz or zip (release notes).
+
+Development version (cgit):
+
+~$ git clone git://orgmode.org/org-mode.git
+
+M-x list-packages RET (see Org ELPA)
+
+Daily snapshots: tar.gz or zip
+
+List of features
+Manuals and tutorials
+Org tools (outside Emacs)
+Worg: community-written docs
+How to contribute to Org?
+History and acknowledgements
+Talks about Org mode
+Google Summer of Code 2012
+Mailing list and goodies
+More on installing Org mode (Worg)
+Staying on the bleeding edge (Worg)
+> documentation
+Documentation and literature
+
+
+Buy the printed version of Org's manual (Network Theory Ltd.)
+
+For each book sold, Network-Theory Ltd. is making a $1 donation to the maintainer of Org mode.
+
+Browse the manual (one page per section).
+
+Read the complete manual: HTML or PDF
+
+Read the compact guide: HTML or PDF
+
+Check the FAQ, the hacks, and tutorials on Worg.
+
+Check the reference docs about hooks, commands and options.
+
+Check the list of (scientific) papers about Org mode.
+
+Before submitting a bug report, make sure you read the "Feedback" section of the manual.
+
+You may also read How To Ask Questions The Smart Way, by Eric S. Raymond and Rick Moen.
+
+M-x org-submit-bug-report RET
+
+< download and install

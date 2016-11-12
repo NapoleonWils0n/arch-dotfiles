@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# check to see if script was run as root
+if [[ $UID -ne 0 ]]; then
+  echo "$0 must be run as root using sudo, make your own sandwich"
+  exit 1
+fi
+
+LOOP="/dev/loop0"
+LUKSCONTAINER="/home/$USER/documents/superfly.iso"
+LUKS=luks
+LUKSMAPPER="/dev/mapper/luks"
+MOUNTPOINT="/home/$USER/mnt"
+
+# select option in quit mount umount; do
+case $1 in
+  mount)
+        echo "Mounting luks container"
+        losetup $LOOP $LUKSCONTAINER
+        cryptsetup luksOpen $LOOP $LUKS
+        mount $LUKSMAPPER $MOUNTPOINT
+        ;;
+  umount)
+        echo "Unmounting luks container"
+        umount $MOUNTPOINT
+        cryptsetup luksClose $LUKS
+	losetup -d $LOOP
+        ;;
+  quit) exit;;
+  *) echo "Usage: crypt [ mount | umount | quit ]";;
+esac

@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# check to see if script was run as root
+if [[ $UID -ne 0 ]]; then
+  echo "$0 must be run as root using sudo, make your own sandwich"
+  exit 1
+fi
+
+# find a free loop device to mount the file
+sudo losetup -f
+
+# use the block device and the path to the file you just created
+sudo losetup /dev/loop0 /home/$USER/documents/superfly.iso
+
+# map the luks container to the loop device
+# and give it a luks alias in this case luks
+sudo cryptsetup luksOpen /dev/loop0 luks
+
+# mount
+sudo mount /dev/mapper/luks /home/$USER/mnt
+
+# umount
+sudo umount /home/$USER/mnt
+
+# close luks
+sudo cryptsetup luksClose luks
+
+# free loop
+sudo losetup -d /dev/loop0
+
+
+case $1 in
+  mount)
+        cryptsetup luksOpen /dev/sda8 crypto
+        echo "Mounting /crytpo..."
+        mount /dev/mapper/crypto /crypto
+        ;;
+  umount)
+        echo "Unmounting /crytpo..."
+        umount /crypto
+        cryptsetup luksClose crypto
+        ;;
+  quit) exit;;
+  *) echo "Usage: crypt [ mount | umount | quit ]";;
+esac
