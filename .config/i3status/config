@@ -13,6 +13,7 @@ general {
 
 order += "volume master"
 order += "disk /"
+order += "disk /home"
 order += "path_exists VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
@@ -49,9 +50,12 @@ load {
 }
 
 disk "/" {
-        format = "%avail"
+        format = "ROOT: %avail"
 }
 
+disk "/home" {
+        format = "HOME: %avail"
+}
 volume master {
         format = "V: %volume"
         device = "default"
